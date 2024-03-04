@@ -8,7 +8,7 @@ const ShopCategory = (props) => {
   const { all_product } = useContext(ShopContext );
   return (
     <div className='shop-category'>
-      <img src={props.banner} alt="" />
+      <img className='shopcategory_banner' src={props.banner} alt="" />
       <div className='shopcategory-indexSort'>
         <p>
           <span> Showing 1-12</span> out of 36 products
@@ -19,6 +19,7 @@ const ShopCategory = (props) => {
         </div>
 
       </div>
+      
       <div className='shopcategory-product'>
         {all_product.map((item, i) => {
           if (props.category === item.category) {
@@ -30,8 +31,12 @@ const ShopCategory = (props) => {
         })}
 
       </div>
+      <div className="shopcategory-loadmore">
+        Explore More
+      </div>
     </div>
   )
 }
 
 export default ShopCategory
+//  1:35 poused
