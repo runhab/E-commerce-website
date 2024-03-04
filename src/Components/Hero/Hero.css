@@ -50,9 +50,7 @@
 .hero-right{
     display: flex;
     flex: 1;
-    /* i remove below  */
-    /* align-items: center; */      
+    /* align-items: center; */ /* i remove below  */
     justify-content: center;
 }
 
-/* i have finished the vidio up to 43:00  */
